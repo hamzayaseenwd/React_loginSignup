@@ -1,18 +1,17 @@
-import { Navbar } from "./components/Navbar";
-import { Products } from "./components/Products";
-import { Router_App } from "./config/Router_App";
+import React from 'react'
+import { Navbar } from './components/Navbar'
+import { Home } from './pages/Home'
+import Login from './pages/Login'
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div className='space-y-12'>
-      <Navbar />
-      <Products />
-    </div>
+    <div>
+      {/* <Navbar/> */}
+      {/* <Home/> */}
+      <Login/>
 
-      <Router_App />
-    </>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App
